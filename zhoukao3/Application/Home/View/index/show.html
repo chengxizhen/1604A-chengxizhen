@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <table>
+        <tr>
+            <td>新闻ID</td>
+            <td>新闻标题</td>
+            <td>新闻内容</td>
+            <td>发布时间</td>
+            <td>操作</td>
+        </tr>
+        <foreach item="list" name="v">
+        <tr>
+            <td><?php echo $V['id'];?></td>
+            <td><?php echo $V['title'];?></td>
+            <td><?php echo $V['demo'];?></td>
+            <td><?php echo $V['time'];?></td>
+            <td>
+                <a href="">删除</a>|
+                <a href="">修改</a>
+            </td>
+        </tr>
+        </foreach>
+        {$page}
+    </table>
+</center>
+</body>
+</html>
